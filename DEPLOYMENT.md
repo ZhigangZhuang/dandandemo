@@ -17,4 +17,4 @@
 npm run build
 ```
 
-如果以后加入前端路由，`public/_redirects` 会让刷新页面时仍然回到 `index.html`，避免 Cloudflare Pages 返回 404。
+如果用的是 Cloudflare Pages 的 Vite / Wrangler 自动配置，单页应用回退通常会由 Cloudflare 配置处理，不需要额外添加 `public/_redirects`。否则可能出现回退规则冲突。
